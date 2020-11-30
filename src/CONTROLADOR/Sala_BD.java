@@ -19,7 +19,7 @@ import java.util.List;
  *
  * @author Thomas
  */
-public class Sala_BD {
+public class Sala_BD {//hahahahahah
       private Connection conex;
 
     public Sala_BD() {
