@@ -12,7 +12,7 @@ package MODELO;
 public class Butaca {
     public int id_butaca;
     public Sala id_sala;
-    public boolean estado;//asdsdsa//
+    public boolean estado;//asdsdsaASas//
 
     public Butaca() {
     }
