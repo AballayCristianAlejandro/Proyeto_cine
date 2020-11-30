@@ -12,12 +12,14 @@ package MODELO;
 public class Sala {
    public int id_sala;
    public int cant_butaca;
+   public Boolean activo;
 
     public Sala() {
     }
 
     public Sala(int cant_butaca) {
         this.cant_butaca = cant_butaca;
+      
     }
 
     public int getId_sala() {
@@ -36,9 +38,18 @@ public class Sala {
         this.cant_butaca = cant_butaca;
     }
 
+    public Boolean getActivo() {
+        return activo;
+    }
+
+    public void setActivo(Boolean activo) {
+        this.activo = activo;
+    }
+    
+
     @Override
     public String toString() {
-        return "Sala{" + "id_sala=" + id_sala + ", cant_butaca=" + cant_butaca + '}';
+        return "Sala{" + "id_sala=" + id_sala + ", cant_butaca=" + cant_butaca +"activo="+ activo+ '}';
     }
    
    

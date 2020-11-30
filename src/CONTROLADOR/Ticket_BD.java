@@ -50,7 +50,7 @@ public class Ticket_BD {
             ps.setTime(7, Time.valueOf(ticket.getHora()));
             ps.setDouble(8, ticket.getMonto());
             ps.setString(9, ticket.getForma_pago());
-            ps.setBoolean(10,ticket.isEstado());
+            ps.setBoolean(10,ticket.isActivo());
             
             ps.executeUpdate();
             
@@ -91,7 +91,7 @@ public class Ticket_BD {
             ps.setTime(2, Time.valueOf(ticket.getHora()));
             ps.setDouble(3, ticket.getMonto());
             ps.setString(4, ticket.getForma_pago());
-            ps.setBoolean(5, ticket.isEstado());
+            ps.setBoolean(5, ticket.isActivo());
             
             ps.executeUpdate();
             
@@ -138,7 +138,7 @@ public class Ticket_BD {
                 ticket.setHora(resultSet.getString("hora"));
                 ticket.setMonto(resultSet.getDouble("monto"));
                 ticket.setForma_pago(resultSet.getString("forma_pago"));
-                ticket.setEstado(resultSet.getBoolean("estado"));
+                ticket.setActivo(resultSet.getBoolean("estado"));
                               
             }        
      
@@ -187,7 +187,7 @@ public class Ticket_BD {
                 ticket.setHora(resultSet.getString("hora"));
                 ticket.setMonto(resultSet.getDouble("monto"));
                 ticket.setForma_pago(resultSet.getString("forma_pago"));
-                ticket.setEstado(resultSet.getBoolean("estado"));
+                ticket.setActivo(resultSet.getBoolean("estado"));
                 
                 
                 tickets.add(ticket);
@@ -238,7 +238,7 @@ public class Ticket_BD {
                 ticket.setHora(resultSet.getString("hora"));
                 ticket.setMonto(resultSet.getDouble("monto"));
                 ticket.setForma_pago(resultSet.getString("forma_pago"));
-                ticket.setEstado(resultSet.getBoolean("estado"));
+                ticket.setActivo(resultSet.getBoolean("estado"));
                 
                 
                 tickets.add(ticket);
@@ -287,7 +287,7 @@ public class Ticket_BD {
                 ticket.setHora(resultSet.getString("hora"));
                 ticket.setMonto(resultSet.getDouble("monto"));
                 ticket.setForma_pago(resultSet.getString("forma_pago"));
-                ticket.setEstado(resultSet.getBoolean("estado"));
+                ticket.setActivo(resultSet.getBoolean("estado"));
                 
                 
                 tickets.add(ticket);

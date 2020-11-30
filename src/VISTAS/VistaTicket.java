@@ -322,7 +322,7 @@ public class VistaTicket extends javax.swing.JInternalFrame {
             jtHorario.setText(ticket.getHora());
             jtMonto.setText(String.valueOf(ticket.getMonto()));
             jtFormapago.setText(ticket.getForma_pago());
-            CBEstado.setSelected(ticket.isEstado());        }
+            CBEstado.setSelected(ticket.isActivo());        }
     }//GEN-LAST:event_btBuscarActionPerformed
 
     private void btGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btGuardarActionPerformed

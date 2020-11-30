@@ -21,12 +21,12 @@ public class Ticket {
     public String hora;
     public double monto;
     public String forma_pago;
-    public boolean estado;
+    public boolean activo;
 
     public Ticket() {
     }
 
-    public Ticket(Pelicula id_pelicula, Sala id_sala, Butaca id_butaca, Funcion id_funcion, Cliente id_cliente, String fecha, String hora, double monto, String forma_pago, boolean estado) {
+    public Ticket(Pelicula id_pelicula, Sala id_sala, Butaca id_butaca, Funcion id_funcion, Cliente id_cliente, String fecha, String hora, double monto, String forma_pago, boolean activo) {
         this.id_pelicula = id_pelicula;
         this.id_sala = id_sala;
         this.id_butaca = id_butaca;
@@ -36,7 +36,7 @@ public class Ticket {
         this.hora = hora;
         this.monto = monto;
         this.forma_pago = forma_pago;
-        this.estado = estado;
+        this.activo = activo;
     }
 
     public int getId_ticket() {
@@ -119,17 +119,17 @@ public class Ticket {
         this.forma_pago = forma_pago;
     }
 
-    public boolean isEstado() {
-        return estado;
+    public boolean isActivo() {
+        return activo;
     }
 
-    public void setEstado(boolean estado) {
-        this.estado = estado;
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 
     @Override
     public String toString() {
-        return "Ticket{" + "id_ticket=" + id_ticket + ", id_pelicula=" + id_pelicula.getId_pelicula() + ", id_sala=" + id_sala.getId_sala() + ", id_butaca=" + id_butaca.getId_butaca() + ", id_funcion=" + id_funcion.getId_funcion() + ", id_cliente=" + id_cliente.getId_cliente() + ", fecha=" + fecha + ", hora=" + hora + ", monto=" + monto + ", forma_pago=" + forma_pago + ", estado=" + estado + '}';
+        return "Ticket{" + "id_ticket=" + id_ticket + ", id_pelicula=" + id_pelicula.getId_pelicula() + ", id_sala=" + id_sala.getId_sala() + ", id_butaca=" + id_butaca.getId_butaca() + ", id_funcion=" + id_funcion.getId_funcion() + ", id_cliente=" + id_cliente.getId_cliente() + ", fecha=" + fecha + ", hora=" + hora + ", monto=" + monto + ", forma_pago=" + forma_pago + ", activo=" + activo + '}';
     }
     
 }

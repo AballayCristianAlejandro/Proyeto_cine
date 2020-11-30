@@ -14,6 +14,9 @@ public class Pelicula {
     public String nombre;
     public String genero;
     public int anio;
+    public Boolean activo;
+
+
 
     public Pelicula() {
     }
@@ -22,6 +25,7 @@ public class Pelicula {
         this.nombre = nombre;
         this.genero = genero;
         this.anio = anio;
+        
     }
 
     public int getId_pelicula() {
@@ -55,10 +59,17 @@ public class Pelicula {
     public void setAnio(int anio) {
         this.anio = anio;
     }
+    public Boolean getActivo() {
+        return activo;
+    }
+
+    public void setActivo(Boolean activo) {
+        this.activo = activo;
+    }
 
     @Override
     public String toString() {
-        return "Pelicula{" + "id_pelicula=" + id_pelicula + ", nombre=" + nombre + ", genero=" + genero + ", anio=" + anio + '}';
+        return "Pelicula{" + "id_pelicula=" + id_pelicula + ", nombre=" + nombre + ", genero=" + genero + ", anio=" + anio + "activo="+ activo + '}';
     }
     
 }
